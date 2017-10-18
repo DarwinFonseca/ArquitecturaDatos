@@ -1,0 +1,6 @@
+SELECT empleados.Codigo_Empleado, `franquicias`.`Director`, franquicias.Localidad, franquicias.Nombre
+FROM `empleados`
+LEFT JOIN franquicias ON franquicias.Director = empleados.Codigo_Empleado
+WHERE franquicias.Director = 112
+
+SI ES ADMIN
