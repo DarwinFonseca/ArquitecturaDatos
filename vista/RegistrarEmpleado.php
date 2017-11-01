@@ -56,7 +56,7 @@
               </div>
               <div class="uk-form-row uk-form-icon">
                 <i class="uk-icon-mobile"></i>
-                <input required  class="uk-form-width-large" type="number" placeholder="Teléfono" name="telefono" id="telefono"/>
+                <input required  class="uk-form-width-large" type="number" min="3100000000" placeholder="Teléfono" name="telefono" id="telefono"/>
               </div>
               <div class="uk-form-row">
                 <button type="submit" value="Registrar" id="btnRegistrarEmpleado" name="btnRegistrarEmpleado" class="uk-width-1-1 uk-button uk-button-primary uk-button-large">Registrar</button>

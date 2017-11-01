@@ -131,9 +131,10 @@ class conexion {
         echo "<option required  value='" . $fila['Numero_Matricula'] . "'>" . $fila['Numero_Matricula'] . " de ".$fila['Nombre']  ."</option>";
       }
       echo "</select>";
-      }
+      $this->Select_Codigo_Cliente();
+    }
 
-      function Select_Codigo_Franquicia() {
+    function Select_Codigo_Franquicia() {
 
         $this->link = mysql_connect($this->servidor, $this->usuario, $this->contrasena);
         // Consultar la base de datos
@@ -145,7 +146,7 @@ class conexion {
           echo "<option required  value='" . $fila['Codigo_Franquicia'] . "'>" . $fila['Codigo_Franquicia'] . ", Localidad: ".$fila['Localidad']  .", Nombre: ". $fila['Nombre'] ."</option>";
         }
         echo "</select>";
-        }
+    }
 
 
     function EliminarUsuario($id_usuario) {

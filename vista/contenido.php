@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style>
 <?php
    session_start(); // al volver al index si existe una session, esta sera destruida, existen formas de conservarlas como con un if(session_start()!= NULL). Pero por el momento para el ejemplo no es valido.
 //   session_destroy();  // Se destruye la session existente de esta forma no permite el duplicado.
@@ -21,6 +21,8 @@ if(!isset($_SESSION['id_user'])){
     <!-- link all the scripts -->
     <script src="../js/jquery.js"></script>
     <script src="../js/uikit.min.js"></script>
+
+    </script>
   </head>
   <body>
     <div class="container" >
